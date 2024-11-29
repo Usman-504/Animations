@@ -1,5 +1,6 @@
 import 'package:animations/example2.dart';
 import 'package:animations/example1.dart';
+import 'package:animations/example3.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -52,7 +53,7 @@ class MainScreen extends StatelessWidget {
                   ),
                   child: const Center(
                     child: Text(
-                      'Container',
+                      'Square',
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                   ),
@@ -76,6 +77,29 @@ class MainScreen extends StatelessWidget {
                   child: const Center(
                     child: Text(
                       'Circle',
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Example3()),
+                  );
+                },
+                child: Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: const Center(
+                    child: Text(
+                      '3D Box',
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                   ),
