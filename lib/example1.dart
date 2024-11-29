@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'dart:math' show pi;
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class Example1 extends StatefulWidget {
+  const Example1({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<Example1> createState() => _Example1State();
 }
 
-class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMixin {
+class _Example1State extends State<Example1> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
 
