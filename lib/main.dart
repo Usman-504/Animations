@@ -1,4 +1,3 @@
-
 import 'package:animations/example2.dart';
 import 'package:animations/example1.dart';
 import 'package:animations/example3.dart';
