@@ -5,6 +5,8 @@ import 'package:animations/example4.dart';
 import 'package:animations/example5.dart';
 import 'package:animations/example6.dart';
 import 'package:animations/example7.dart';
+import 'package:animations/example8.dart';
+import 'package:animations/example9.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -37,54 +39,68 @@ class MainScreen extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.blue,
         ),
-        body: const Padding(
-          padding: EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CustomContainer(
-                screen: Example1(),
-                color: Colors.blueAccent,
-                text: 'Square',
-              ),
-              SizedBox(height: 20),
-              CustomContainer(
-                screen: Example2(),
-                color: Colors.greenAccent,
-                text: 'Circle',
-              ),
-              SizedBox(height: 20),
-              CustomContainer(
-                screen: Example3(),
-                color: Colors.teal,
-                text: '3D Box',
-              ),
-              SizedBox(height: 20),
-              CustomContainer(
-                screen: Example4(),
-                color: Colors.amber,
-                text: 'Hero Animation',
-              ),
-              SizedBox(height: 20),
-              CustomContainer(
-                screen: Example5(),
-                color: Colors.cyanAccent,
-                text: 'Implicit Animation',
-              ),
-              SizedBox(height: 20),
-              CustomContainer(
-                screen: Example6(),
-                color: Colors.deepPurpleAccent,
-                text: 'Tween Animation',
-              ),
-              SizedBox(height: 20),
-              CustomContainer(
-                screen: Example7(),
-                color: Colors.deepOrange,
-                text: 'Custom Polygon',
-              ),
-
-            ],
+        body: const SingleChildScrollView(
+          child:  Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                CustomContainer(
+                  screen: Example1(),
+                  color: Colors.blueAccent,
+                  text: 'Square',
+                ),
+                SizedBox(height: 20),
+                CustomContainer(
+                  screen: Example2(),
+                  color: Colors.greenAccent,
+                  text: 'Circle',
+                ),
+                SizedBox(height: 20),
+                CustomContainer(
+                  screen: Example3(),
+                  color: Colors.teal,
+                  text: '3D Box',
+                ),
+                SizedBox(height: 20),
+                CustomContainer(
+                  screen: Example4(),
+                  color: Colors.amber,
+                  text: 'Hero Animation',
+                ),
+                SizedBox(height: 20),
+                CustomContainer(
+                  screen: Example5(),
+                  color: Colors.cyanAccent,
+                  text: 'Implicit Animation',
+                ),
+                SizedBox(height: 20),
+                CustomContainer(
+                  screen: Example6(),
+                  color: Colors.deepPurpleAccent,
+                  text: 'Tween Animation',
+                ),
+                SizedBox(height: 20),
+                CustomContainer(
+                  screen: Example7(),
+                  color: Colors.deepOrange,
+                  text: 'Custom Polygon',
+                ),
+                SizedBox(height: 20),
+                CustomContainer(
+                  screen: Example8(),
+                  color: Colors.pink,
+                  text: '3D Drawer',
+                ),
+                SizedBox(height: 20),
+                CustomContainer(
+                  screen: Example9(),
+                  color: Colors.cyan,
+                  text: 'Animated Prompt',
+                ),
+            
+              ],
+            ),
           ),
         ),
       ),
