@@ -2,6 +2,7 @@ import 'package:animations/example2.dart';
 import 'package:animations/example1.dart';
 import 'package:animations/example3.dart';
 import 'package:animations/example4.dart';
+import 'package:animations/example5.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -124,6 +125,29 @@ class MainScreen extends StatelessWidget {
                   child: const Center(
                     child: Text(
                       'Hero Animation',
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Example5()),
+                  );
+                },
+                child: Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: Colors.cyanAccent,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: const Center(
+                    child: Text(
+                      'Implicit Animation',
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                   ),
