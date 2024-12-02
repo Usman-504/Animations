@@ -4,6 +4,7 @@ import 'package:animations/example3.dart';
 import 'package:animations/example4.dart';
 import 'package:animations/example5.dart';
 import 'package:animations/example6.dart';
+import 'package:animations/example7.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -172,6 +173,29 @@ class MainScreen extends StatelessWidget {
                   child: const Center(
                     child: Text(
                       'Tween Animation',
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Example7()),
+                  );
+                },
+                child: Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: Colors.deepOrange,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: const Center(
+                    child: Text(
+                      'Custom Polygon',
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                   ),
