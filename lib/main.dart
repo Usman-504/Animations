@@ -1,6 +1,7 @@
 import 'package:animations/example2.dart';
 import 'package:animations/example1.dart';
 import 'package:animations/example3.dart';
+import 'package:animations/example4.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -110,7 +111,7 @@ class MainScreen extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Example3()),
+                    MaterialPageRoute(builder: (context) => const Example4()),
                   );
                 },
                 child: Container(
