@@ -98,7 +98,6 @@ class MainScreen extends StatelessWidget {
                   color: Colors.cyan,
                   text: 'Animated Icon',
                 ),
-            
               ],
             ),
           ),
