@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 
-class AnimatedPrompt extends StatefulWidget {
+class AnimatedIcon extends StatefulWidget {
   final String title;
   final String subTitle;
   final Widget child;
 
-  const AnimatedPrompt({
+  const AnimatedIcon({
     super.key,
     required this.title,
     required this.subTitle,
@@ -14,10 +14,10 @@ class AnimatedPrompt extends StatefulWidget {
   });
 
   @override
-  State<AnimatedPrompt> createState() => _AnimatedPromptState();
+  State<AnimatedIcon> createState() => _AnimatedIconState();
 }
 
-class _AnimatedPromptState extends State<AnimatedPrompt>
+class _AnimatedIconState extends State<AnimatedIcon>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _iconScaleAnimation;
@@ -168,11 +168,11 @@ class Example9 extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         centerTitle: true,
-        title: const Text('Animated Prompt'),
+        title: const Text('Animated Icon'),
         backgroundColor: Colors.blue,
       ),
       body: const Center(
-        child: AnimatedPrompt(
+        child: AnimatedIcon(
           title: 'Thank you for your order!',
           subTitle: 'Your order will be delivered in 2 days. Enjoy!',
           child: Icon(

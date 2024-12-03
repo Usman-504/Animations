@@ -96,7 +96,7 @@ class MainScreen extends StatelessWidget {
                 CustomContainer(
                   screen: Example9(),
                   color: Colors.cyan,
-                  text: 'Animated Prompt',
+                  text: 'Animated Icon',
                 ),
             
               ],
